@@ -1,56 +1,96 @@
 
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import Chat from "@/components/Chat";
 import { Link } from "react-router-dom";
-import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert"; 
+import { MessageSquare, Users, Sparkles } from "lucide-react";
 
 const Index = () => {
-  const [hasError, setHasError] = useState(false);
-
-  // Add error handling around the Chat component
-  const handleError = (error: Error) => {
-    console.error("Error in Chat component:", error);
-    setHasError(true);
-  };
-  
   return (
-    <div className="w-full h-full">
-      {hasError ? (
-        <div className="container mx-auto p-8 max-w-2xl">
-          <Alert variant="destructive" className="mb-6">
-            <AlertTitle>Something went wrong</AlertTitle>
-            <AlertDescription>
-              We're sorry, but the chat feature couldn't be loaded.
-            </AlertDescription>
-          </Alert>
-          <div className="flex justify-center">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+      {/* Hero Section */}
+      <section className="pt-20 pb-16 px-4">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+            Welcome to Aito
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            Your intelligent companion for learning, training, and personal development. 
+            Experience the future of interactive education and coaching.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/about">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
+                Learn More
+              </Button>
+            </Link>
             <Link to="/share-thoughts">
-              <Button variant="default">Share Your Thoughts Instead</Button>
+              <Button variant="outline" size="lg" className="px-8 py-3">
+                Get Started
+              </Button>
             </Link>
           </div>
         </div>
-      ) : (
-        <ErrorBoundary onError={handleError}>
-          <Chat />
-        </ErrorBoundary>
-      )}
+      </section>
+
+      {/* Features Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+            Why Choose Aito?
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center p-6">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <MessageSquare className="w-8 h-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Interactive Learning</h3>
+              <p className="text-gray-600">
+                Engage in meaningful conversations and receive personalized feedback 
+                to accelerate your learning journey.
+              </p>
+            </div>
+            <div className="text-center p-6">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-8 h-8 text-green-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Soft Skills Training</h3>
+              <p className="text-gray-600">
+                Develop essential soft skills through guided practice sessions 
+                and real-world scenario simulations.
+              </p>
+            </div>
+            <div className="text-center p-6">
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Sparkles className="w-8 h-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Personalized Experience</h3>
+              <p className="text-gray-600">
+                Tailored content and coaching approaches that adapt to your 
+                unique learning style and goals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 px-4 bg-gray-900 text-white">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Transform Your Learning?
+          </h2>
+          <p className="text-xl text-gray-300 mb-8">
+            Join our beta program and be among the first to experience 
+            the future of personalized education and training.
+          </p>
+          <Link to="/share-thoughts">
+            <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3">
+              Join Beta Program
+            </Button>
+          </Link>
+        </div>
+      </section>
     </div>
   );
 };
-
-// Simple error boundary component
-function ErrorBoundary({ children, onError }: { children: React.ReactNode, onError: (error: Error) => void }) {
-  try {
-    return <>{children}</>;
-  } catch (error) {
-    if (error instanceof Error) {
-      onError(error);
-    } else {
-      onError(new Error('Unknown error'));
-    }
-    return null;
-  }
-}
 
 export default Index;
