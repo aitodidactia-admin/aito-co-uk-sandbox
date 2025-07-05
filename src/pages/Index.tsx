@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { MessageSquare, Users, Sparkles } from "lucide-react";
@@ -10,7 +9,7 @@ const Index = () => {
       <section className="pt-20 pb-16 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Welcome to Aito
+            Welcome to Aitodidactia
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
             Your intelligent companion for learning, training, and personal development. 
@@ -35,7 +34,7 @@ const Index = () => {
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-            Why Choose Aito?
+            Why Choose Aitodidactia?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-6">
