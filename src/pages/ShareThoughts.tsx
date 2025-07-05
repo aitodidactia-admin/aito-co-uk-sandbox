@@ -1,5 +1,5 @@
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import FeatureDescription from "@/components/share-thoughts/FeatureDescription";
 import MessageForm from "@/components/share-thoughts/MessageForm";
 
@@ -12,7 +12,6 @@ const ShareThoughts = () => {
         <Card className="max-w-3xl mx-auto">
           <CardHeader>
             <CardTitle className="text-3xl">Share Your Thoughts</CardTitle>
-            <CardDescription>Connect with us and help shape the future of Aito</CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             <FeatureDescription />
