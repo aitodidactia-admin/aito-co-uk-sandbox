@@ -78,7 +78,7 @@ const Index = () => {
         <img 
           src={featuredStamp} 
           alt="Featured" 
-          className="absolute top-6 left-6 w-24 h-24 z-10"
+          className="absolute top-6 left-6 w-24 h-24 z-10 transform -rotate-12"
         />
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
