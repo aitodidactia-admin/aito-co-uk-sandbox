@@ -85,7 +85,7 @@ const Index = () => {
             Ready to Transform Your Mindset?
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Join the Aito Beta Tes and be among the first to experience 
+            Join the Aito Beta Test and be among the first to experience 
             the future of personalised education and training.
           </p>
           <Link to="/share-thoughts">
