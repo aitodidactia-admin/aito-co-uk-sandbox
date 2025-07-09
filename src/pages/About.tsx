@@ -25,22 +25,14 @@ const About = () => {
           </p>
 
           <div className="pt-6">
-            <h2 className="text-2xl font-semibold mb-4 text-foreground">What is Aito</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-foreground">What do we do?</h2>
             <div className="space-y-4">
               <p>
-                Aito is an online personal development platform with a difference. It encourages users to approach significant personal change by regularly, week to week, using bite sized pieces of guided self-discovery as a platform to create change in their lives.
+                We use a range of technologies to create, effectively, Virtual Employees. Chat Bots and IVRs are not what we do. We have built Trainers, Mindset Coaches, Ticketing Agents, Salespeople and Customer Service Agents that answer questions, send emails, book calendar appointments, keep secure client records, recommend purchases, and even proactively contact humans when required...
               </p>
 
               <p>
-                The Aito service incorporates real, anonymous, examples from actual users which are actively validated against established philosophies. This makes Aito's knowledge and suggestions as relevant as they can be for a modern audience.
-              </p>
-
-              <p>
-                And why is it different? Books, search engines, podcasts although useful are not directed, and not specific. The reader or listener is left to process lots of information, sift it, and then convert that information into something that they may or may not be able to implement in their lives. Aito works with the user one-to-one to pinpoint an area of life or mental fitness to be strengthened, shares specific bite sized Precepts that the user can grasp manageably, helps them to set an intention to work towards. This is, like most things in life, an ongoing process; so Aito meets with the user from week to week to maintain progress.
-              </p>
-
-              <p className="italic pt-4">
-                Feel free to ask Aito if you want to know more…
+                They learn, they sound like you, they can process hundreds of enquires an hour, 24 hours per day. They never want a raise...
               </p>
             </div>
           </div>
