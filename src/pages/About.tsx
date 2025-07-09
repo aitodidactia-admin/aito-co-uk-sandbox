@@ -24,6 +24,10 @@ const About = () => {
             Feel free to ask Aito about us…
           </p>
 
+          <p className="text-muted-foreground">
+            aitodidactia.uk
+          </p>
+
           <div className="pt-6">
             <h2 className="text-2xl font-semibold mb-4 text-foreground">What do we do?</h2>
             <div className="space-y-4">
