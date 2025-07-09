@@ -75,11 +75,11 @@ const Index = () => {
       <section className="py-16 px-4 bg-gray-900 text-white">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Transform Your Learning?
+            Ready to Transform Your Mindset?
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Join our beta program and be among the first to experience 
-            the future of personalized education and training.
+            Join the Aito Beta Tes and be among the first to experience 
+            the future of personalised education and training.
           </p>
           <Link to="/share-thoughts">
             <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3">
