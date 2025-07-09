@@ -12,7 +12,7 @@ const Index = () => {
             Welcome to Aitodidactia
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Your intelligent companion for learning, training, and personal development. 
+            Your intelligent companions for learning, training, and personal development. 
             Experience the future of interactive education and coaching.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
