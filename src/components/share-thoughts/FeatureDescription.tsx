@@ -8,7 +8,7 @@ const FeatureDescription = () => {
       
       <div className="space-y-4">
         <div>
-          <h3 className="text-lg font-medium mb-2">Join the Beta Test</h3>
+          <h3 className="text-lg font-medium mb-2">Join the Aito Beta Test</h3>
           <p className="text-muted-foreground">
             Just send us your first name and email address, and one of the team will be in touch. 
             It's free to join and use the Aito Beta Test, but contributions are extremely important 
