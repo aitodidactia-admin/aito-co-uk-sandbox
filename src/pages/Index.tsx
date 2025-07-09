@@ -87,11 +87,11 @@ const Index = () => {
           <p className="text-xl text-gray-300 mb-8">
             Have a chat with Aito, our Personal Development Mentor.
           </p>
-          <Link to="/share-thoughts">
+          <a href="https://www.aitodidactia.uk" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3">
-              Join Beta Program
+              Call Aito
             </Button>
-          </Link>
+          </a>
         </div>
       </section>
     </div>
