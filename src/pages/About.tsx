@@ -36,6 +36,10 @@ const About = () => {
               </p>
 
               <p>
+                It's like having a phone call with a human...
+              </p>
+
+              <p>
                 They learn, they sound like you, they can process hundreds of enquires an hour, 24 hours per day. They never want a raise...
               </p>
             </div>
