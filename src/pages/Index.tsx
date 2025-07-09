@@ -85,8 +85,7 @@ const Index = () => {
             Ready to Transform Your Mindset?
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Join the Aito Beta Test and be among the first to experience 
-            the future of personalised education and training.
+            Have a chat with Aito, our Personal Development Mentor.
           </p>
           <Link to="/share-thoughts">
             <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3">
