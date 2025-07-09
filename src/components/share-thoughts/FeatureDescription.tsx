@@ -25,16 +25,14 @@ const FeatureDescription = () => {
         </div>
 
         <div>
-          <h3 className="text-lg font-medium mb-2">Want to Work with Us</h3>
+          <h3 className="text-lg font-medium mb-2">Want to Work with Us?</h3>
           <p className="text-muted-foreground">
-            Aito can be configured with ANY content, and is an excellent coaching and training 
-            platform for soft skills in particular. Reach out if you'd like to know more..
+            We've build Virtual People for Bookkeepers, Charities, Consultancies, Coaching and Mentoring organisations, and more.
           </p>
         </div>
 
         <div className="mt-6">
           <p className="text-muted-foreground italic">
-            You can also reach us through Aito – he'll pass on your message to the team.
           </p>
         </div>
       </div>
