@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import featuredStamp from "@/assets/featured-stamp.png";
+import featuredStamp from "@/assets/featured-stamp-transparent.png";
 import { MessageSquare, Users, Sparkles } from "lucide-react";
 
 const Index = () => {
