@@ -27,7 +27,7 @@ const FeatureDescription = () => {
         <div>
           <h3 className="text-lg font-medium mb-2">Want to Work with Us?</h3>
           <p className="text-muted-foreground">
-            We've build Virtual People for Bookkeepers, Charities, Consultancies, Coaching and Mentoring organisations, and more.
+            We've built Virtual People for Bookkeepers, Charities, Consultancies, Coaching and Mentoring organisations, and more.
           </p>
         </div>
 
