@@ -2,20 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import featuredStamp from "@/assets/featured-stamp-transparent.png";
 import { MessageSquare, Users, Sparkles } from "lucide-react";
-import { useState, useEffect } from "react";
-import { processStampImage } from "@/utils/processStampImage";
 
 const Index = () => {
-  const [processedStamp, setProcessedStamp] = useState(featuredStamp);
-
-  useEffect(() => {
-    const processImage = async () => {
-      const processed = await processStampImage();
-      setProcessedStamp(processed);
-    };
-    processImage();
-  }, []);
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* Hero Section */}
@@ -88,7 +76,7 @@ const Index = () => {
       <section className="py-16 px-4 bg-gray-900 text-white relative">
         {/* Featured stamp in top left */}
         <img 
-          src={processedStamp} 
+          src={featuredStamp} 
           alt="Featured" 
           className="absolute top-6 left-6 w-24 h-24 z-10 transform -rotate-12"
         />
