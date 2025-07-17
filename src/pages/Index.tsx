@@ -1,8 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { MessageSquare, Users, Sparkles } from "lucide-react";
+import { useState, useEffect } from "react";
+import { processStampWithBackgroundRemoval } from "@/utils/processStampImage";
 
 const Index = () => {
+  const [processedStampSrc, setProcessedStampSrc] = useState<string>("/lovable-uploads/1484aa1d-3554-426f-8742-f000219d5d1c.png");
+
+  useEffect(() => {
+    const processImage = async () => {
+      try {
+        const processed = await processStampWithBackgroundRemoval("/lovable-uploads/1484aa1d-3554-426f-8742-f000219d5d1c.png");
+        setProcessedStampSrc(processed);
+      } catch (error) {
+        console.error("Failed to process stamp image:", error);
+        // Keep original image as fallback
+      }
+    };
+
+    processImage();
+  }, []);
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* Hero Section */}
@@ -75,7 +92,7 @@ const Index = () => {
       <section className="py-16 px-4 bg-gray-900 text-white relative">
         {/* Featured stamp in top left */}
         <img 
-          src="/lovable-uploads/1484aa1d-3554-426f-8742-f000219d5d1c.png" 
+          src={processedStampSrc} 
           alt="Featured" 
           className="absolute top-6 left-6 w-24 h-24 z-10 transform -rotate-[10deg]"
         />
