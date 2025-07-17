@@ -72,7 +72,13 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-gray-900 text-white">
+      <section className="py-16 px-4 bg-gray-900 text-white relative">
+        {/* Featured stamp in top left */}
+        <img 
+          src="/lovable-uploads/1484aa1d-3554-426f-8742-f000219d5d1c.png" 
+          alt="Featured" 
+          className="absolute top-6 left-6 w-24 h-24 z-10 transform -rotate-[10deg]"
+        />
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Transform Your Mindset?
