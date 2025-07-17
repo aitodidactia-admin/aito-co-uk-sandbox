@@ -98,7 +98,7 @@ const Index = () => {
         />
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Transform Your Mindset?
+            Ready to Strengthen Your Mindset?
           </h2>
           <p className="text-xl text-gray-300 mb-8">
             Have a chat with Aito, our Personal Development Mentor.
