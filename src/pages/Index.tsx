@@ -26,11 +26,16 @@ const Index = () => {
       <section className="pt-20 pb-16 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Welcome to Aitodidactia
+            Aitodidactia
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Your intelligent companions for learning, training, and personal development. 
-            Experience the future of interactive education and coaching.
+          <p className="text-xl md:text-2xl text-gray-600 mb-4 max-w-3xl mx-auto">
+            We build intelligent, virtual workers for your business...
+          </p>
+          <p className="text-lg md:text-xl text-gray-600 mb-4 max-w-3xl mx-auto">
+            Someone to answer your regular queries, take messages, sell tickets, train your clients, book your meetings, take your meetings...
+          </p>
+          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto font-semibold">
+            Your Virtual Workforce starts here...
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/about">
