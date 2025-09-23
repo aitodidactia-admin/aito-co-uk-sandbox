@@ -81,10 +81,9 @@ const Index = () => {
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Sparkles className="w-8 h-8 text-purple-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Personalized Experience</h3>
+              <h3 className="text-xl font-semibold mb-3">Highly Customisable</h3>
               <p className="text-gray-600">
-                Tailored content and coaching approaches that adapt to your 
-                unique learning style and goals.
+                If you think they're chatbots, think again. You can choose their voice, personality, confidence level, to name just a few...
               </p>
             </div>
           </div>
