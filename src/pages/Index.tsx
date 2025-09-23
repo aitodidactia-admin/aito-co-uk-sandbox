@@ -103,7 +103,7 @@ const Index = () => {
             Want to Have a Chat with a VE?
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Have a chat with Aito, our Personal Development Mentor.
+            This month's featured VE is Aito, a personal development mentor. Just click to have a chat with him...
           </p>
           <a href="https://www.aitodidactia.uk" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3">
