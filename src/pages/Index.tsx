@@ -72,10 +72,9 @@ const Index = () => {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-green-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Soft Skills Training</h3>
+              <h3 className="text-xl font-semibold mb-3">Evolving Capabilities</h3>
               <p className="text-gray-600">
-                Develop essential soft skills through guided practice sessions 
-                and real-world scenario simulations.
+                Like a new staff member, your VE will grow over time. We'll train them together
               </p>
             </div>
             <div className="text-center p-6">
