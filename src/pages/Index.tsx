@@ -63,10 +63,9 @@ const Index = () => {
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MessageSquare className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Interactive Learning</h3>
+              <h3 className="text-xl font-semibold mb-3">Fully Managed...</h3>
               <p className="text-gray-600">
-                Engage in meaningful conversations and receive personalized feedback 
-                to accelerate your learning journey.
+                Our team helps you work out what's needed, how to build it, and how to measure it's benefits
               </p>
             </div>
             <div className="text-center p-6">
