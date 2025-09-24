@@ -11,7 +11,7 @@ const ShareThoughts = () => {
       <div className="container mx-auto px-4 pt-24 pb-12">
         <Card className="max-w-3xl mx-auto bg-white shadow-lg">
           <CardHeader>
-            <CardTitle className="text-4xl font-bold text-gray-900 text-center">Share Your Thoughts</CardTitle>
+            <CardTitle className="text-4xl font-bold text-gray-900 text-center">Connect</CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
             <FeatureDescription />
