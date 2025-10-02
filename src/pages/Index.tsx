@@ -82,7 +82,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3">Evolving Capabilities</h3>
               <p className="text-gray-600">
-                Like a new staff member, your VE will grow over time. We'll train them together
+                Like a new staff member, your Virtual Employee will grow over time. We'll train them together
               </p>
             </div>
             <div className="text-center p-6">
