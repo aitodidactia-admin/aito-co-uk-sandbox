@@ -31,9 +31,17 @@ const Index = () => {
           <p className="text-xl md:text-2xl text-gray-600 mb-4 max-w-3xl mx-auto">
             We build intelligent, Virtual People for your business...
           </p>
-          <p className="text-lg md:text-xl text-gray-600 mb-4 max-w-3xl mx-auto">
-            Someone to answer your regular queries, take messages, sell tickets, train your clients, book your meetings, take your meetings...
-          </p>
+          <div className="text-lg md:text-xl text-gray-600 mb-4 max-w-3xl mx-auto text-left">
+            <p className="mb-2">Someone to:</p>
+            <ul className="list-disc list-inside space-y-1 ml-4">
+              <li>answer your regular queries</li>
+              <li>take messages</li>
+              <li>sell tickets</li>
+              <li>train your clients</li>
+              <li>book your meetings</li>
+              <li>take your meetings..</li>
+            </ul>
+          </div>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto font-semibold">
             Your Virtual Team starts here...
           </p>
