@@ -8,26 +8,6 @@ const About = () => {
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 text-center">About Aitodidactia</h1>
         
         <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
-          <p>
-            The Aitodidactia Organisation began partially as an academic exercise, but mostly to serve an emerging human need to develop mental strength and fitness in a demanding modern world.
-          </p>
-
-          <p>
-            We are a team of highly experienced developers, AI Prompt engineers, teachers, public speakers, personal coaches, and researchers who share the human values of personal development, equality and charity.
-          </p>
-
-          <p className="font-medium">
-            We are Building Something Brilliant, in order to help People.
-          </p>
-
-          <p className="italic">
-            Feel free to ask Aito about us…
-          </p>
-
-          <p className="text-muted-foreground">
-            aitodidactia.uk
-          </p>
-
           <div className="pt-6">
             <h2 className="text-3xl font-bold mb-6 text-gray-900">What do we do?</h2>
             <div className="space-y-4">
