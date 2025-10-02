@@ -20,7 +20,7 @@ const About = () => {
               </p>
 
               <p>
-                It's like having a phone call with a human...
+                It's like having a phone call with a real person...
               </p>
 
               <p>
