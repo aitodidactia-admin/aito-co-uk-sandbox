@@ -16,7 +16,7 @@ const About = () => {
               </p>
               
               <p>
-                Chat Bots and IVRs are not what we do. We have built Trainers, Mindset Coaches, Ticketing Agents, Salespeople and Customer Service Agents that answer questions, send emails, book calendar appointments, keep secure client records, recommend purchases, and even proactively contact humans when required...
+                Chat Bots and IVRs are not what we do. We have built Trainers, Personal Development Coaches, Ticketing Agents, Salespeople and Customer Service Agents that answer questions, send emails, book calendar appointments, keep secure client records, recommend purchases, and even proactively contact humans when required...
               </p>
 
               <p>
