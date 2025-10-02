@@ -35,11 +35,11 @@ const Index = () => {
             <p className="mb-2">Someone to:</p>
             <ul className="list-disc list-inside space-y-1 ml-4">
               <li>answer your regular queries</li>
-              <li>take messages</li>
+              <li><strong><em>take</em></strong> messages</li>
               <li>sell tickets</li>
               <li>train your clients</li>
               <li>book your meetings</li>
-              <li>take your meetings..</li>
+              <li><strong><em>take</em></strong> your meetings..</li>
             </ul>
           </div>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto font-semibold">
