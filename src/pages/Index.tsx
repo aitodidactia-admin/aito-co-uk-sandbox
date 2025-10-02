@@ -73,7 +73,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3">Fully Managed...</h3>
               <p className="text-gray-600">
-                Our Human team helps you work out what's (who's!) needed, how to build it, and how to measure it's benefits
+                Our Human team helps you work out what's (who's!) needed, how to build it, and how to measure it's benefits...
               </p>
             </div>
             <div className="text-center p-6">
@@ -82,7 +82,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3">Evolving Capabilities</h3>
               <p className="text-gray-600">
-                Like a new staff member, your Virtual Employee will grow over time. We'll train them together
+                Like a new staff member, your Virtual Employee will grow over time. We'll train them together...
               </p>
             </div>
             <div className="text-center p-6">
