@@ -10,7 +10,7 @@ const FeatureDescription = () => {
         <div>
           <h3 className="text-lg font-medium mb-2">Send us Feedback</h3>
           <p className="text-muted-foreground">
-            We're continually evolving Aito, and all our Virtual People, based on your comments - good or bad. We need to know what we need to work on...
+            We're continually evolving our products and services, and all our Virtual People, based on your comments - good or bad. We need to know what we need to work on...
           </p>
         </div>
 
