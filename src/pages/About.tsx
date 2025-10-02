@@ -12,7 +12,11 @@ const About = () => {
             <h2 className="text-3xl font-bold mb-6 text-gray-900">What do we do?</h2>
             <div className="space-y-4">
               <p className="font-bold">
-                We develop and utilise a range of technologies to create, effectively, Virtual People. Chat Bots and IVRs are not what we do. We have built Trainers, Mindset Coaches, Ticketing Agents, Salespeople and Customer Service Agents that answer questions, send emails, book calendar appointments, keep secure client records, recommend purchases, and even proactively contact humans when required...
+                We develop and utilise a range of technologies to create, effectively, Virtual People.
+              </p>
+              
+              <p className="font-bold">
+                Chat Bots and IVRs are not what we do. We have built Trainers, Mindset Coaches, Ticketing Agents, Salespeople and Customer Service Agents that answer questions, send emails, book calendar appointments, keep secure client records, recommend purchases, and even proactively contact humans when required...
               </p>
 
               <p>
