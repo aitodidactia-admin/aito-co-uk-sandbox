@@ -35,7 +35,7 @@ const Index = () => {
             <p className="mb-2">Someone to:</p>
             <ul className="list-disc list-inside space-y-1 ml-4">
               <li>answer your regular queries</li>
-              <li><strong><em>take</em></strong> messages</li>
+              <li>take messages</li>
               <li>sell tickets</li>
               <li>train your clients</li>
               <li>book your meetings</li>
