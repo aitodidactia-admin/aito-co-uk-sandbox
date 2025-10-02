@@ -15,7 +15,7 @@ const About = () => {
                 We develop and utilise a range of technologies to create, effectively, Virtual People.
               </p>
               
-              <p className="font-bold">
+              <p>
                 Chat Bots and IVRs are not what we do. We have built Trainers, Mindset Coaches, Ticketing Agents, Salespeople and Customer Service Agents that answer questions, send emails, book calendar appointments, keep secure client records, recommend purchases, and even proactively contact humans when required...
               </p>
 
