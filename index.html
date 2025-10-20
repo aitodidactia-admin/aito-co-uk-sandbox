@@ -32,7 +32,7 @@
     </style>
     <script>
       // Additional JavaScript to hide branding after widget loads
-      setTimeout(() => {
+      const hideBranding = () => {
         const widget = document.querySelector('elevenlabs-convai');
         if (widget && widget.shadowRoot) {
           const style = document.createElement('style');
@@ -40,16 +40,40 @@
             [class*="powered"], 
             [class*="branding"],
             [class*="footer"],
-            a[href*="elevenlabs"] {
+            a[href*="elevenlabs"],
+            * {
+              color: transparent !important;
+            }
+            *:has(a[href*="elevenlabs"]) {
               display: none !important;
-              visibility: hidden !important;
-              opacity: 0 !important;
-              height: 0 !important;
             }
           `;
           widget.shadowRoot.appendChild(style);
+          
+          // Also hide all text nodes containing "Powered by" or "ElevenLabs"
+          const walker = document.createTreeWalker(
+            widget.shadowRoot,
+            NodeFilter.SHOW_TEXT | NodeFilter.SHOW_ELEMENT
+          );
+          
+          let node;
+          while (node = walker.nextNode()) {
+            if (node.nodeType === Node.TEXT_NODE && 
+                (node.textContent.includes('Powered by') || 
+                 node.textContent.includes('ElevenLabs'))) {
+              node.parentElement.style.display = 'none';
+            }
+            if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'A' &&
+                node.href && node.href.includes('elevenlabs')) {
+              node.style.display = 'none';
+              if (node.parentElement) node.parentElement.style.display = 'none';
+            }
+          }
         }
-      }, 1000);
+      };
+      
+      setTimeout(hideBranding, 1000);
+      setTimeout(hideBranding, 2000);
     </script>
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
