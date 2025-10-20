@@ -29,27 +29,41 @@
         height: 0 !important;
         overflow: hidden !important;
       }
+      
+      /* Initially hide the widget to prevent branding flash */
+      elevenlabs-convai {
+        opacity: 0 !important;
+        transition: opacity 0.1s ease-in !important;
+      }
+      
+      elevenlabs-convai.branding-cleaned {
+        opacity: 1 !important;
+      }
     </style>
     <script>
-      // Additional JavaScript to hide branding after widget loads
+      // Hide branding immediately and continuously
       const hideBranding = () => {
         const widget = document.querySelector('elevenlabs-convai');
         if (widget && widget.shadowRoot) {
-          const style = document.createElement('style');
-          style.textContent = `
-            [class*="powered"], 
-            [class*="branding"],
-            [class*="footer"],
-            a[href*="elevenlabs"] {
-              display: none !important;
-            }
-            *:has(a[href*="elevenlabs"]) {
-              display: none !important;
-            }
-          `;
-          widget.shadowRoot.appendChild(style);
+          // Inject aggressive hiding styles
+          if (!widget.shadowRoot.querySelector('#branding-hider')) {
+            const style = document.createElement('style');
+            style.id = 'branding-hider';
+            style.textContent = `
+              [class*="powered"], 
+              [class*="branding"],
+              [class*="footer"],
+              a[href*="elevenlabs"] {
+                display: none !important;
+              }
+              *:has(a[href*="elevenlabs"]) {
+                display: none !important;
+              }
+            `;
+            widget.shadowRoot.appendChild(style);
+          }
           
-          // Also hide all text nodes containing "Powered by" or "ElevenLabs"
+          // Hide all text nodes containing "Powered by" or "ElevenLabs"
           const walker = document.createTreeWalker(
             widget.shadowRoot,
             NodeFilter.SHOW_TEXT | NodeFilter.SHOW_ELEMENT
@@ -68,11 +82,29 @@
               if (node.parentElement) node.parentElement.style.display = 'none';
             }
           }
+          
+          // Show widget after cleaning
+          widget.classList.add('branding-cleaned');
         }
       };
       
+      // Run immediately and repeatedly
+      hideBranding();
+      setTimeout(hideBranding, 0);
+      setTimeout(hideBranding, 100);
+      setTimeout(hideBranding, 500);
       setTimeout(hideBranding, 1000);
       setTimeout(hideBranding, 2000);
+      
+      // Watch for the widget being added to the DOM
+      const observer = new MutationObserver(() => {
+        hideBranding();
+      });
+      
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
     </script>
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
