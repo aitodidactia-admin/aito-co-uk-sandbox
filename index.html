@@ -15,15 +15,42 @@
     <elevenlabs-convai agent-id="agent_4301k6ztwj29ffnakd2y6fvntgh4"></elevenlabs-convai>
     <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
     <style>
-      /* Hide ElevenLabs branding */
+      /* Hide ElevenLabs branding with multiple approaches */
+      elevenlabs-convai {
+        --elevenlabs-branding-display: none !important;
+      }
+      
       elevenlabs-convai::part(footer),
       elevenlabs-convai::part(branding),
-      [class*="elevenlabs"][class*="branding"],
-      [class*="elevenlabs"][class*="powered"],
-      [class*="convai"][class*="footer"] {
+      elevenlabs-convai::part(powered-by) {
         display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
       }
     </style>
+    <script>
+      // Additional JavaScript to hide branding after widget loads
+      setTimeout(() => {
+        const widget = document.querySelector('elevenlabs-convai');
+        if (widget && widget.shadowRoot) {
+          const style = document.createElement('style');
+          style.textContent = `
+            [class*="powered"], 
+            [class*="branding"],
+            [class*="footer"],
+            a[href*="elevenlabs"] {
+              display: none !important;
+              visibility: hidden !important;
+              opacity: 0 !important;
+              height: 0 !important;
+            }
+          `;
+          widget.shadowRoot.appendChild(style);
+        }
+      }, 1000);
+    </script>
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
