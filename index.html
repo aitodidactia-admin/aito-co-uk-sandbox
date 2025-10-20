@@ -14,6 +14,16 @@
     <div id="root"></div>
     <elevenlabs-convai agent-id="agent_4301k6ztwj29ffnakd2y6fvntgh4"></elevenlabs-convai>
     <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+    <style>
+      /* Hide ElevenLabs branding */
+      elevenlabs-convai::part(footer),
+      elevenlabs-convai::part(branding),
+      [class*="elevenlabs"][class*="branding"],
+      [class*="elevenlabs"][class*="powered"],
+      [class*="convai"][class*="footer"] {
+        display: none !important;
+      }
+    </style>
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
